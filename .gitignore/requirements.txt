@@ -1,7 +1,0 @@
-pip install nltk
-import nltk
-nltk.download('stopwords')
-nltk.download('punkt')
-pip install numpy
-pip install matplotlib
-pip install pandas
