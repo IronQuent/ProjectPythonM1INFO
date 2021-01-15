@@ -1,0 +1,5 @@
+#Sauvegarde des corpus
+*.crp
+
+#Cache python
+*.pyc
