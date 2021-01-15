@@ -7,6 +7,7 @@ Created on Thu Jan 14 19:51:48 2021
 """
 
 ################################## Import de librairies et classes ##################################
+
 import praw
 
 import urllib.request
@@ -24,8 +25,6 @@ import Corpus
 ################################## Création des Corpus ##################################
 
 #Chargement des posts Reddit et ajout au corpus
-
-
 def loadReddit(corpus_Reddit):
     reddit = praw.Reddit(client_id='NaUJwmnlGn4__g',
                          client_secret='nde8wjWh1Mn7OO2XpUx0Evbyz7I', user_agent='Reddit WebScraping')
@@ -45,8 +44,6 @@ def loadReddit(corpus_Reddit):
         corpus_Reddit.add_doc(doc)
 
 #Chargement des posts Arxiv et ajout au corpus
-
-
 def loadArxiv(corpus_Arxiv):
     url = 'http://export.arxiv.org/api/query?search_query=all:covid&start=0&max_results=100'
     data = urllib.request.urlopen(url).read().decode()
@@ -97,8 +94,6 @@ corpus_Reddit.save("Corona_red.crp")
 corpus_Arxiv.save("Corona_arx.crp")
 
 #Afficher le dataframe des mots les plus importants
-
-
 def affichageDF(self, n, textDFReddit, textDFArxiv):
     try:
         #Création splash de l'analyse
@@ -122,8 +117,6 @@ def affichageDF(self, n, textDFReddit, textDFArxiv):
         splash = SplashErrorNumber(self)
 
 #Afficher la courbe du mot passé en paramètre
-
-
 def affichageCourbe(self, word, f, canvas):
     try:
         #Récupération des dataframe de l'évolution d'un mot dans le temps
@@ -161,8 +154,6 @@ LARGE_FONT = ("Arial", 20)
 
 #Classe principale
 #Aide de https://pythonprogramming.net/change-show-new-frame-tkinter/ pour la mise en place
-
-
 class InterfaceGraphique(tk.Tk):
 
     def __init__(self, *args, **kwargs):
@@ -237,8 +228,6 @@ class PageWords(tk.Frame):
         buttonMenu.pack(pady=5)
 
 #Page menu
-
-
 class PageMenu(tk.Frame):
 
     def __init__(self, parent, controller):
@@ -259,8 +248,6 @@ class PageMenu(tk.Frame):
         buttonM2.pack(pady=5)
 
 #Page Recherche
-
-
 class PageSearch(tk.Frame):
 
     def __init__(self, parent, controller):
@@ -315,8 +302,6 @@ class SplashErrorWord(tk.Toplevel):
         self.update()
 
 #Fenêtre affichant une erreur de mot recherché
-
-
 class SplashErrorNumber(tk.Toplevel):
     def __init__(self, parent):
         tk.Toplevel.__init__(self, parent)
@@ -334,8 +319,6 @@ class SplashErrorNumber(tk.Toplevel):
         self.update()
 
 #Fenêtre affichant le chargement de l'analyse
-
-
 class SplashAnalyse(tk.Toplevel):
     def __init__(self, parent):
         tk.Toplevel.__init__(self, parent)

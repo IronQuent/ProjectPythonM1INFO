@@ -6,11 +6,13 @@ Created on Fri Jan 15 10:05:59 2021
 @author: quentinthomasson
 """
 
+#Librairies
 import unittest
 import Corpus
 import Document
 
 #Classe réalisant les tests unitaires
+#Aide de https://docs.python.org/3/library/unittest.html pour ma mise en place
 class TestMethods(unittest.TestCase):
     
     #Vérification du bon fonctionnement de la fonction de nettoyage
