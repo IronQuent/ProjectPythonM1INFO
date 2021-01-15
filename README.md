@@ -6,12 +6,12 @@ Cette analyse permet de comparer des mots ou groupe de mots issus de deux corpus
 
 Fonctionne avec une version 3.8 de Python.
 
-Installation du fichier "requirements.txt" on macOs :
+Installation du fichier "requirements.txt" sur macOs :
 
 ```bash
 python -m pip install -r requirements.txt
 ```
-Installation du fichier "requirements.txt" on Windows :
+Installation du fichier "requirements.txt" sur Windows :
 
 ```bash
 py -m pip install -r requirements.txt
