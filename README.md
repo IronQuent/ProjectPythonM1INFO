@@ -6,7 +6,7 @@ Cette analyse permet de comparer des mots ou groupe de mots issus de deux corpus
 
 Fonctionne avec une version 3.8 de Python.
 
-Installation du fichier "requirements.txt" sur macOs :
+Installation du fichier "requirements.txt" sur macOS :
 
 ```bash
 python -m pip install -r requirements.txt
