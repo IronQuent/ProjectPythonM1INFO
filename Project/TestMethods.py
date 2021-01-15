@@ -12,7 +12,7 @@ import Corpus
 import Document
 
 #Classe réalisant les tests unitaires
-#Aide de https://docs.python.org/3/library/unittest.html pour ma mise en place
+#Aide de https://docs.python.org/3/library/unittest.html pour la mise en place
 class TestMethods(unittest.TestCase):
     
     #Vérification du bon fonctionnement de la fonction de nettoyage
