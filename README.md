@@ -20,8 +20,8 @@ py -m pip install -r requirements.txt
 ## Utilisation
 
 Page Menu :
-	- Comparaison de mots des corpus : Comparer les mots les plus fréquents dans les corpus
-	- Recherche de mots dans les corpus : Rechercher un mot ou groupe de mot dans les corpus
+	* Comparaison de mots des corpus : Comparer les mots les plus fréquents dans les corpus
+	* Recherche de mots dans les corpus : Rechercher un mot ou groupe de mot dans les corpus
 Page Comparaison de mots des corpus :
 	- Champ : taper le nombre de mots les plus fréquents à afficher
 	- Analyser : lance l'analyse TFxIDF sur les corpus afin de retourner les mots les plus fréquents
